@@ -5,3 +5,5 @@ export const createCourse = (course) => {
 }
 export const findAllCourses = () => model.find();
 export const findCourseByNumber = (courseNumber) => model.findOne({ number: courseNumber});
+export const findCourseByID = (courseID) => model.findById(courseID);
+export const deleteCourse = (courseNumber) => model.deleteOne({ number: courseNumber});
